@@ -4,8 +4,7 @@ Flask 1.1.1 - Python 3.7
 IMPORTANT NOTES:
 
     1. If the backend require any database please use any IN-MEMORY or SQLLite database Unless mentioned in Questions Otherwise .
-    3. Make sure you follow the steps mentioned under "PROJECT START STEPS" and ensure that the steps execute successfully. 
-    4. Make sure you follow the steps mentioned under "DOCKER START STEPS" and ensure that the steps execute successfully. 
+    2. Make sure you follow the steps mentioned under "PROJECT START STEPS" and ensure that the steps execute successfully. 
 
 PROJECT START STEPS:
 
