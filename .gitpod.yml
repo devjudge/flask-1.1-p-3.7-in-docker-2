@@ -1,8 +1,13 @@
 tasks:
-  - init: >
+  - before: >
       wget -qOdatabase-setup.sh https://codejudge-starter-repo-artifacts.s3.ap-south-1.amazonaws.com/backend-project/gitpod/python/3.7/db-gitpod-setup.sh &&
       chmod 0755 database-setup.sh &&
       bash database-setup.sh
+    init: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      python manage.py migrate
+    command: python restapi.py
 ports:
   - port: 8080
     onOpen: open-preview
