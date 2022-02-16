@@ -6,7 +6,6 @@ tasks:
     init: |
       pip install --upgrade pip
       pip install -r requirements.txt
-      python manage.py migrate
     command: python restapi.py
 ports:
   - port: 8080
