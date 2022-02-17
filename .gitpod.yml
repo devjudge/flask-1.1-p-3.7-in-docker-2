@@ -5,6 +5,7 @@ tasks:
       bash database-setup.sh
     init: |
       pip install --upgrade pip
+      python -m pip install Flask==1.1.1
       pip install -r requirements.txt
     command: python restapi.py
 ports:
