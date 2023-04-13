@@ -8,9 +8,19 @@ tasks:
       python -m pip install Flask==1.1.1
       pip install -r requirements.txt
     command: python restapi.py
+
 ports:
   - port: 8080
-    onOpen: open-preview
+    name: "Backend Server"
+    onOpen: open-browser
+    visibility: public
+  - port: 3306
+    name: "MySQL Server"
+    onOpen: ignore
+    visibility: public
+  - port: 27017
+    name: "MongoDB Server"
+    onOpen: ignore
     visibility: public
 
 vscode:
